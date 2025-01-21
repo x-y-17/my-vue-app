@@ -23,6 +23,11 @@ const HomeRoute = {
       component: () => import("@/views/welcome/index.vue"),
     },
     {
+      path: "/winelist",
+      name: "winelist",
+      component: () => import("@/views/wine/wineList/index.vue"),
+    },
+    {
       path: "/dropShadow",
       name: "dropShadow",
       component: () => import("@/components/dropShadow.vue"),

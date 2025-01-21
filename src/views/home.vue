@@ -36,6 +36,7 @@ import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
+  MenuOutlined,
 } from "@ant-design/icons-vue";
 import { useRouter } from "vue-router";
 
@@ -51,6 +52,13 @@ const menus = ref([
     label: "欢迎使用",
     title: "欢迎使用",
     path: "/welcome",
+  },
+  {
+    key: "winelist",
+    icon: () => h(MenuOutlined),
+    label: "酒单",
+    title: "酒单",
+    path: "/winelist",
   },
   {
     key: "dropShadow",

@@ -1,7 +1,12 @@
+<script setup>
+import overturnCard from "./overturnCard.vue";
+</script>
 <template>
   <div class="drop-shadow-box">
     <div class="dashed box-shadow"></div>
     <div class="dashed drop-shadow"></div>
+    <!-- 随机生成一个网络上的图片 -->
+    <overturnCard src="https://picsum.photos/200/300" />
   </div>
 </template>
 <style scoped>
@@ -16,6 +21,7 @@
 }
 .drop-shadow {
   filter: drop-shadow(5px 5px 8px);
+  margin-bottom: 200px;
 }
 .drop-shadow-box {
   margin: 100px;
