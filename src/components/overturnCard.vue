@@ -46,23 +46,37 @@ const overturn = () => {
 </template>
 <style scoped>
 .overturn-card {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   perspective: 1000px;
 }
 
 .overturn-card-front,
 .overturn-card-back {
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden; /* 隐藏背面 */
   transition: transform 0.5s;
   transform-style: preserve-3d; /* 保持3D效果 */
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   img {
     width: 100%;
     height: 100%;
+    object-fit: fit;
+    border-radius: 12px;
+  }
+}
+.overturn-card-back {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  :deep(.ant-descriptions) {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
   }
 }
 .overturn-card-front {
@@ -77,8 +91,7 @@ const overturn = () => {
 
 /* 翻转时的状态 */
 .overturn-card-front.hide {
-  transform: rotateY(270deg);
-  visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 .overturn-card-back.hide {
