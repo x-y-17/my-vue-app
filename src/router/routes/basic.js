@@ -12,6 +12,7 @@ const LayoutRoute = {
 const HomeRoute = {
   path: "/home",
   name: "home",
+  redirect: "/home/welcome",
   component: () => import("@/views/home.vue"),
   meta: {
     title: "首页",
