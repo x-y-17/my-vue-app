@@ -2,7 +2,7 @@
   <div id="home">
     <header class="header">
       <div class="header-content">
-        <div class="logo">广告位</div>
+        <div class="logo">广告位1</div>
         <a-menu
           v-model:selectedKey="selectedKey"
           mode="horizontal"
