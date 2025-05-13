@@ -27,7 +27,7 @@
         <router-view></router-view>
       </main>
     </main>
-    <footer class="footer">广告位</footer>
+    <footer class="footer">广告位1</footer>
   </div>
 </template>
 <script setup>
